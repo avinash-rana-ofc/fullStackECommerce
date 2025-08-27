@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+
+/* *{padding: 0px; margin: 0px; box-sizing: border-box;} */
+
 .container{
   width: 90%;
   margin: auto;
@@ -14,4 +17,8 @@ body{
 
 .link:hover{
   color: #ff5252;
+}
+
+.MuiBadge-badge{
+  background-color: #ff5252 !important;
 }
