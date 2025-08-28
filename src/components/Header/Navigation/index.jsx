@@ -5,21 +5,24 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { GoRocket } from "react-icons/go";
 import CategoryPanel from "./CategoryPanel";
-import "../Navigation/style.css"
+import "../Navigation/style.css";
 
 const Navigation = () => {
-    const [isOpenCatPanel, setIsOpenCatPanel] = useState(false);
+  const [isOpenCatPanel, setIsOpenCatPanel] = useState(false);
 
-    const openCategoryPanel = (value) => {
-      console.log(value)
-        setIsOpenCatPanel(value);
-    }
+  const openCategoryPanel = (value) => {
+    console.log(value);
+    setIsOpenCatPanel(value);
+  };
   return (
     <>
       <nav>
         <div className="flex justify-end items-center gap-5 container">
           <div className="w-[20%] col_1">
-            <Button className="gap-2 w-full !text-black" onClick={() => openCategoryPanel(true)}>
+            <Button
+              className="gap-2 w-full !text-black"
+              onClick={() => openCategoryPanel(true)}
+            >
               <RiMenu2Fill className="text-[18px]" />
               Shop by Categories
               <LiaAngleDownSolid className="ml-auto font-bold text-[13px]" />
@@ -27,7 +30,7 @@ const Navigation = () => {
           </div>
 
           <div className="w-[60%] col_2">
-            <ul className="flex items-center gap-3">
+            <ul className="flex items-center gap-3 nav">
               <li className="list-none">
                 <Link
                   to={"/home"}
@@ -38,7 +41,7 @@ const Navigation = () => {
                   </Button>
                 </Link>
               </li>
-              <li className="list-none">
+              <li className="relative list-none">
                 <Link
                   to={"/home"}
                   className="font-[500] text-[14px] transition link"
@@ -47,6 +50,47 @@ const Navigation = () => {
                     Fashion
                   </Button>
                 </Link>
+
+                {/* Menu Bar */}
+                <div className="top-[120%] left-[0%] absolute bg-white opacity-0 shadow-md min-w-[200px] transition-all submenu">
+                  <ul>
+                    <li className="w-full list-none">
+                      <Link to={"/"} className="w-full">
+                        <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                          Men
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="w-full list-none">
+                      <Link to={"/"} className="w-full">
+                        <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                          Women
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="w-full list-none">
+                      <Link to={"/"} className="w-full">
+                        <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                          Kids
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="w-full list-none">
+                      <Link to={"/"} className="w-full">
+                        <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                          Boys
+                        </Button>
+                      </Link>
+                    </li>
+                    <li className="w-full list-none">
+                      <Link to={"/"} className="w-full">
+                        <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                          Girls
+                        </Button>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className="list-none">
                 <Link
@@ -131,7 +175,10 @@ const Navigation = () => {
       </nav>
 
       {/* Category Panel Component */}
-      <CategoryPanel openCategoryPanel={openCategoryPanel} isOpenCatPanel={isOpenCatPanel}/>
+      <CategoryPanel
+        openCategoryPanel={openCategoryPanel}
+        isOpenCatPanel={isOpenCatPanel}
+      />
     </>
   );
 };
