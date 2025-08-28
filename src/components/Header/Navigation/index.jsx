@@ -54,12 +54,52 @@ const Navigation = () => {
                 {/* Menu Bar */}
                 <div className="top-[120%] left-[0%] absolute bg-white opacity-0 shadow-md min-w-[200px] transition-all submenu">
                   <ul>
-                    <li className="w-full list-none">
+                    <li className="relative w-full list-none">
                       <Link to={"/"} className="w-full">
                         <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
                           Men
                         </Button>
                       </Link>
+                      {/* Submenu */}
+                      <div className="top-[0%] left-[100%] absolute bg-white opacity-0 shadow-md min-w-[200px] transition-all submenu">
+                        <ul>
+                          <li className="w-full list-none">
+                            <Link to={"/"} className="w-full">
+                              <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                                Men
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="w-full list-none">
+                            <Link to={"/"} className="w-full">
+                              <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                                Women
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="w-full list-none">
+                            <Link to={"/"} className="w-full">
+                              <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                                Kids
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="w-full list-none">
+                            <Link to={"/"} className="w-full">
+                              <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                                Boys
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="w-full list-none">
+                            <Link to={"/"} className="w-full">
+                              <Button className="!justify-start !rounded-none w-full !text-[rgba(0,0,0,0.8)] !text-left">
+                                Girls
+                              </Button>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li className="w-full list-none">
                       <Link to={"/"} className="w-full">
