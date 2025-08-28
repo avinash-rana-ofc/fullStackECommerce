@@ -5,19 +5,21 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { GoRocket } from "react-icons/go";
 import CategoryPanel from "./CategoryPanel";
+import "../Navigation/style.css"
 
 const Navigation = () => {
     const [isOpenCatPanel, setIsOpenCatPanel] = useState(false);
 
-    const openCategoryPanel = () => {
-        setIsOpenCatPanel(true);
+    const openCategoryPanel = (value) => {
+      console.log(value)
+        setIsOpenCatPanel(value);
     }
   return (
     <>
       <nav>
         <div className="flex justify-end items-center gap-5 container">
           <div className="w-[20%] col_1">
-            <Button className="gap-2 w-full !text-black" onClick={openCategoryPanel}>
+            <Button className="gap-2 w-full !text-black" onClick={() => openCategoryPanel(true)}>
               <RiMenu2Fill className="text-[18px]" />
               Shop by Categories
               <LiaAngleDownSolid className="ml-auto font-bold text-[13px]" />
