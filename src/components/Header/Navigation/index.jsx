@@ -5,7 +5,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { GoRocket } from "react-icons/go";
 import CategoryPanel from "./CategoryPanel";
-import "../Navigation/style.css";
+import "./style.css";
 
 const Navigation = () => {
   const [isOpenCatPanel, setIsOpenCatPanel] = useState(false);

@@ -1,13 +1,52 @@
-.categoryPanel button{
-    text-transform: capitalize !important;
+/* Default button style in category panel */
+.categoryPanel button {
+  text-transform: capitalize !important;
 }
 
-/* .categoryPanel .submenu{
-    display: none;
-} */
+/* Hide submenu initially */
+.nav li .submenu {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Show submenu on hover */
+.nav li:hover > .submenu {
+  visibility: visible;
+  opacity: 1 !important;
+  top: 100%;
+}
+
+/* ✅ Only highlight the hovered <li>'s *direct* button */
+.nav li .submenu li:hover > a > button {
+  background-color: #ff5252 !important;
+  color: white !important;
+}
 
 
-.nav li:hover .submenu{opacity: 1 !important; visibility: inherit; top: 100%;}
 
-.nav li .submenu li .submenu{top: 0px !important; left: 120% !important;}
-.nav li .submenu li:hover .submenu{left: 100% !important;}
+/* Position nested submenu (2nd level) */
+.nav li .submenu li .submenu {
+  top: 0px !important;
+  left: 120% !important;
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+/* Show nested submenu when parent li is hovered */
+.nav li .submenu li:hover > .submenu {
+  left: 100% !important;
+  opacity: 1 !important;
+  visibility: visible;
+}
+
+/* Default style for nested submenu buttons */
+.nav li .submenu li .submenu button {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Hover style for nested submenu buttons */
+.nav li .submenu li .submenu li:hover > a > button {
+  background-color: #ff5252 !important;
+  color: #ff5252 !important; /* optional: highlight text instead */
+}
