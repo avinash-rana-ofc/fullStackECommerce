@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "./style.css";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 const HomeSlider = () => {
   return (
@@ -15,7 +15,11 @@ const HomeSlider = () => {
         <Swiper
           spaceBetween={20}
           navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+          modules={[Autoplay, Navigation]}
           className="sliderHome"
         >
           <SwiperSlide>
