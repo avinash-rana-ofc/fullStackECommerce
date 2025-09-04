@@ -7,11 +7,11 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper/modules";
-import BannerBox from "../BannerBox";
+import ProductItem from "../ProductItem";
 
-const AdsBannerSlider = (props) => {
+const ProductsSlider = (props) => {
   return (
-    <div className="py-5 w-full homeCatSlider">
+    <div className="py-3 productsSlider">
       <Swiper
         slidesPerView={props.items}
         navigation={true}
@@ -20,26 +20,30 @@ const AdsBannerSlider = (props) => {
           clickable: true,
         }}
         modules={[Navigation]}
-        className="smlBtn"
+        className="mySwiper"
+        //style={{ width: "120%" }} 
       >
         <SwiperSlide>
-            <BannerBox img={"banner1.webp"} alt={"banner1"} link={"/"}/>
+            <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <BannerBox img={"banner2.jpg"} alt={"banner2"} link={"/"} />
+            <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <BannerBox img={"banner3.webp"} alt={"banner3"} link={"/"} />
+            <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <BannerBox img={"banner4.webp"} alt={"banner4"} link={"/"} />
+            <ProductItem />
         </SwiperSlide>
         <SwiperSlide>
-            <BannerBox img={"banner5.jpg"} alt={"banner5"} link={"/"} />
+            <ProductItem />
+        </SwiperSlide>
+        <SwiperSlide>
+            <ProductItem />
         </SwiperSlide>
       </Swiper>
     </div>
   );
 };
 
-export default AdsBannerSlider;
+export default ProductsSlider;

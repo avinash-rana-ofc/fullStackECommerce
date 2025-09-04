@@ -66,6 +66,8 @@ nav ul button:hover {
   top: 50% !important;
 }
 
+.homeCatSlider{overflow: inherit !important;}
+
 .homeCatSlider .swiper-button-prev,
 .homeCatSlider .swiper-button-next {
   width: 30px;
@@ -75,13 +77,14 @@ nav ul button:hover {
 .homeCatSlider .swiper-button-prev:after,
 .homeCatSlider .swiper-button-next:after {
   font-size: 18px !important;
+  color: #000;
 }
 
 .homeCatSlider .swiper-button-prev {
-  left: -10px !important;
+  left: 10px !important;
 }
 .homeCatSlider .swiper-button-next {
-  right: -10px !important;
+  right: 10px !important;
 }
 
 .homeCatSlider .item {
@@ -97,4 +100,17 @@ nav ul button:hover {
 
 .homeCatSlider .item:hover img{
   transform: scale(1.1);
+}
+
+.MuiTabs-indicator{
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected{
+  color: #ff5252 !important;
+}
+
+.productsSlider .swiper-wrapper{
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
