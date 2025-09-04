@@ -17,7 +17,7 @@ const Navigation = () => {
   return (
     <>
       <nav>
-        <div className="flex justify-end items-center gap-5 container">
+        <div className="flex justify-end items-center gap-8 container">
           <div className="w-[20%] col_1">
             <Button
               className="gap-2 w-full !text-black"
@@ -36,7 +36,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[14px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Home
                   </Button>
                 </Link>
@@ -46,7 +46,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[14px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Fashion
                   </Button>
                 </Link>
@@ -137,7 +137,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[14px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Electronics
                   </Button>
                 </Link>
@@ -147,7 +147,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[16px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Bags
                   </Button>
                 </Link>
@@ -157,7 +157,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[16px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Footwear
                   </Button>
                 </Link>
@@ -167,7 +167,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[16px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Groceries
                   </Button>
                 </Link>
@@ -177,7 +177,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[16px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Beauty
                   </Button>
                 </Link>
@@ -187,7 +187,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[16px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Wellness
                   </Button>
                 </Link>
@@ -197,7 +197,7 @@ const Navigation = () => {
                   to={"/home"}
                   className="font-[500] text-[16px] transition link"
                 >
-                  <Button className="!font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
+                  <Button className="!py-4 !font-[500] !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] transition link">
                     Jewellery
                   </Button>
                 </Link>

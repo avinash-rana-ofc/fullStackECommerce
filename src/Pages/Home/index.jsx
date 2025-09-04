@@ -19,6 +19,8 @@ const Home = () => {
       <HomeSlider />
       <HomeCatSlider />
 
+{/* POPULAR PRODUCTS SECTION */}
+
       <section className="bg-white py-8">
         <div className="container">
           <div className="flex justify-between items-center">
@@ -31,7 +33,7 @@ const Home = () => {
             <div className="rightSec">
               <Box
                 sx={{
-                  maxWidth: { xs: 320, sm: 480, lg : 880 },
+                  maxWidth: { xs: 320, sm: 480, lg: 880 },
                   bgcolor: "background.paper",
                 }}
               >
@@ -55,11 +57,12 @@ const Home = () => {
             </div>
           </div>
 
-          <ProductsSlider items={5}/>
+          <ProductsSlider items={5} />
         </div>
       </section>
+{/* BANNER OFFER SECTION */}
 
-      <section className="bg-white py-16">
+      <section className="bg-white py-16 pt-2">
         <div className="container">
           <div className="flex justify-between items-center m-auto mb-7 p-4 py-4 border-[#ff5252] border-2 rounded-md w-[80%] freeShipping">
             <div className="flex items-center gap-4 col1">
@@ -79,11 +82,28 @@ const Home = () => {
           <AdsBannerSlider items={4} />
         </div>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
+{/* LATEST PRODUCTS SECTION */}
+
+      <section className="bg-white py-5 pt-0">
+        <div className="container">
+          <h2 className="font-[600] text-[20px]">Latest Products</h2>
+
+          <ProductsSlider items={5} />
+          <AdsBannerSlider items={4} />
+        </div>
+      </section>
+
+{/* FEATURED PRODUCTS SECTION */}
+      <section className="bg-white py-5 pt-0">
+        <div className="container">
+          <h2 className="font-[600] text-[20px]">Featured Products</h2>
+
+          <ProductsSlider items={5} />
+          <AdsBannerSlider items={3} />
+        </div>
+      </section>
+      
     </div>
   );
 };
